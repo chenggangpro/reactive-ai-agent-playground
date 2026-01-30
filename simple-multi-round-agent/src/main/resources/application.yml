@@ -1,0 +1,30 @@
+server:
+  port: 0
+  shutdown: graceful
+  netty:
+    connection-timeout: PT3M
+spring:
+  application:
+    name: simple-multi-round-agent
+  main:
+    allow-bean-definition-overriding: true
+  flyway:
+    enabled: false
+  jackson:
+    locale: zh_CN
+    time-zone: "Asia/Shanghai"
+    generator:
+      write-numbers-as-strings: true
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
+reactive:
+  ai:
+    lite:
+      client:
+        deepseek:
+          chat-provider:
+            certifications:
+              - token: "your-deepseek-token"
+                default: true
