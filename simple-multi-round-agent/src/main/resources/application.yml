@@ -18,13 +18,3 @@ spring:
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
-
-reactive:
-  ai:
-    lite:
-      client:
-        deepseek:
-          chat-provider:
-            certifications:
-              - token: "your-deepseek-token"
-                default: true

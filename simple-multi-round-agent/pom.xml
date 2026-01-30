@@ -29,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>pro.chenggang</groupId>
-            <artifactId>reactive-ai-lite-client-deepseek</artifactId>
+            <artifactId>reactive-ai-lite-client-ollama</artifactId>
             <version>${reactive-ai-lite.version}</version>
         </dependency>
 
